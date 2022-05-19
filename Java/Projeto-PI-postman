@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "80a1b9e6-e5b2-478d-ab0f-14506d666083",
+		"name": "ipet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PETSHOP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ipet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ipet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PETSHOP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Pets\",\n    \"cnpj\": \"78457148000147\",\n    \"endereco\": \"Av. Politecnica\",\n    \"numero\": \"1400\",\n    \"delivery\": 1,\n    \"plano\": 1,\n    \"veterinario\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ipet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ipet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PETSHOP",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ipet/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ipet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PRODUTO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PRODUTOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST SERVICO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Banho e Tosa\",\n    \"descricao\": \"Banho e tosa de pets\",\n    \"valor\": 45.0,\n    \"tipoServico\": \"Higiene\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servico/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servico",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SERVICO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/servico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ITENS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/itens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"itens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ITENS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/itens/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"itens",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PEDIDO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PEDIDO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USUARIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"nome\": \"Felipe Olegario\",\n\"email\": \"felipe.olegario@linx3.com\",\n\"telefone\": \"11963353621\",\n\"cpf\": \"48963818829\",\n\"senha\": \"laurinha\",\n\"dataNascimento\": \"2021-07-07\",\n\"endereco\": \"Rua mario ancona\",\n\"cep\": \"05572100\",\n\"numero\": 130\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET USUARIO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST AVALIACAO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"notaPetshop\": 4,\n    \"notaUsuario\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/avaliacoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avaliacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE AVALIACAO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/avaliacoes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avaliacoes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET AVALIACAO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/avaliacoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avaliacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PETSHOP",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idPetshop\": 6,\n    \"nome\": \"Cobasi\",\n    \"cnpj\": \"78457148000147\",\n    \"endereco\": \"Av. Politecnica\",\n    \"numero\": 1400,\n    \"delivery\": 1,\n    \"plano\": 1,\n    \"veterinario\": \"0\",\n    \"produtos\": [\n        {\n            \"idProduto\": 1,\n            \"nome\": \"Ração Seca PremieR Pet Golden Special Cães Adultos Frango e Carne\",\n            \"descricao\": \"A Ração Seca PremieR Pet Golden Special Cães Adultos Frango\",\n            \"valor\": 152.91,\n            \"marca\": \"Golden, Premier\",\n            \"especie\": \"Cachorro\",\n            \"quantidade\": 30\n        },\n        {\n            \"idProduto\": 2,\n            \"nome\": \"Ração Seca PremieR Pet Golden Special Cães Adultos Frango e Carne\",\n            \"descricao\": \"A Ração Seca PremieR Pet Golden Special Cães Adultos Frango\",\n            \"valor\": 152.91,\n            \"marca\": \"Golden, Premier\",\n            \"especie\": \"Cachorro\",\n            \"quantidade\": 30\n        }\n    ],\n    \"avaliacoes\": [\n        {\n            \"idAvaliacao\": 2,\n            \"data\": \"2021-10-03\",\n            \"notaPetshop\": 4,\n            \"notaUsuario\": 2,\n            \"fkUsuario\": {\n                \"idUsuario\": 1,\n                \"nome\": \"Felipe Olegario\",\n                \"email\": \"felipe.olegario@linx3.com\",\n                \"telefone\": \"11963353621\",\n                \"cpf\": \"48963818829\",\n                \"senha\": \"laurinha\",\n                \"dataNascimento\": \"2021-07-07\",\n                \"endereço\": null,\n                \"cep\": \"05572100\",\n                \"numero\": 130\n            }\n        },\n        {\n            \"idAvaliacao\": 3,\n            \"data\": \"2021-10-03\",\n            \"notaPetshop\": 4,\n            \"notaUsuario\": 2,\n            \"fkUsuario\": {\n                \"idUsuario\": 1,\n                \"nome\": \"Felipe Olegario\",\n                \"email\": \"felipe.olegario@linx3.com\",\n                \"telefone\": \"11963353621\",\n                \"cpf\": \"48963818829\",\n                \"senha\": \"laurinha\",\n                \"dataNascimento\": \"2021-07-07\",\n                \"endereço\": null,\n                \"cep\": \"05572100\",\n                \"numero\": 130\n            }\n        }\n    ],\n    \"servico\": [\n        {\n            \"idServico\": 1,\n            \"nome\": \"Banho e Tosa\",\n            \"descricao\": \"Banho e tosa de pets\",\n            \"valor\": 45.0,\n            \"tipoServico\": \"Higiene\"\n        },\n        {\n            \"idServico\": 2,\n            \"nome\": \"Banho e Tosa\",\n            \"descricao\": \"Banho e tosa de pets\",\n            \"valor\": 45.0,\n            \"tipoServico\": \"Higiene\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/petshop/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"petshop",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}

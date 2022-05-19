@@ -1,0 +1,106 @@
+cat /etc/hostname
+vi /etc/hostname
+reboot
+
+
+EPEL
+
+systemctl status ngix
+
+vi /etc/ssh/sshd_config
+
+WinSCP
+http://ec2-52-73-135-43.compute-1.amazonaws.com/
+
+Criar Instancia
+IpElastic- associar (Liberar a porta HTTP) Securete Group
+Hostname
+Ip na propria maquina  (etc/hosts) para cada um falando sobre si-No LINUX
+Epel - nginx
+Index
+
+Criar Load Balance
+
+http://3.232.169.169/
+
+ipcoringa:  10.0.2.2: 8080
+
+
+
+
+
+54.156.252.241 maq-LoadBalance ec2-54-234-0-239.compute-1.amazonaws.com
+52.73.135.43 maq-Front2 ec2-52-73-135-43.compute-1.amazonaws.com
+34.193.7.207 maq-Front ec2-34-193-7-207.compute-1.amazonaws.com
+
+sudo amazon-linux-extras install nginx1
+
+sudo vim /etc/hosts
+
+i para inserir
+
+54.156.252.241 maq-LoadBalance ec2-54-234-0-239.compute-1.amazonaws.com
+52.73.135.43 maq-Front2 ec2-52-73-135-43.compute-1.amazonaws.com
+52.73.19.17 maq-Front ec2-52-73-19-17.compute-1.amazonaws.com
+
+esc :wq
+
+sudo vim /etc/nginx/conf.d/loadbalance.conf
+Criar arquivo de conf no load balance
+
+sudo yum install git
+
+instalar o Node 
+curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+
+
+Rodar o Build -sudo npm run build
+
+Excluir o index que já existe no nginx
+sudo rm -r /usr/share/nginx/html
+
+Criar nova pasta pois a outra que foi excluida está com bostas
+sudo mkdir /usr/share/nginx/html
+
+Copiar o Build do projeto para a nova pasta (front 1)
+sudo cp -r BandTec-4ADSA-2022-1/iPet\ -\ WEB\ -\ React/ipet-web/build/. /etc/nginx/html
+
+
+Restart
+sudo systemctl restart nginx   Ou sudo service nginx reload
+
+
+
+
+BACKEND
+
+Se atualizar o projeto, dentro da pasta da api rodar :
+mvn clean install -DskipTests
+
+/home/ec2-user/BandTec-4ADSA-2022-1/Java/spring-sprint-2/target
+
+Se for para iniciar a API:
+encontrar a pasta Target da api e rodar:
+java -jar **Nome do arquivo.jar**
+
+java -jar spring-sprint-2-0.0.1-SNAPSHOT.jar
+
+sudo vim /etc/rc.local
+
+
+systemctl status rc-local.service
+
+
+https://github.com/NicolasRuiz10/IPET-Repo.git
+
+npm audit fix --force
+
+MAQFRONT
+ssh -i "api-ipet.pem" ec2-user@ec2-34-193-7-207.compute-1.amazonaws.com
+
+MAQFRONT2
+ssh -i "api-ipet.pem" ec2-user@ec2-52-73-135-43.compute-1.amazonaws.com
+
+MAQ LOADBALANCE
+
+BACKEND

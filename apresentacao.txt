@@ -1,0 +1,46 @@
+MAQFRONT
+ssh -i "api-ipet.pem" ec2-user@ec2-34-193-7-207.compute-1.amazonaws.com
+
+MAQFRONT2
+ssh -i "api-ipet.pem" ec2-user@ec2-52-73-135-43.compute-1.amazonaws.com
+
+LOADBALANCE
+ssh -i "api-ipet.pem" ec2-user@ec2-54-156-252-241.compute-1.amazonaws.com
+
+
+BACKEND
+ssh -i "api-ipet.pem" ec2-user@ec2-34-226-239-106.compute-1.amazonaws.com
+
+sudo /etc/hosts
+
+sudo vim /etc/nginx/conf.d/loadbalance.config
+
+sudo vim /etc/nginx/html (build do projeto)
+
+sudo vim /etc/rc.local
+
+
+
+certificado
+
+cd /etc/ssl
+
+sudo mkdir private
+
+sudo chmod 700 /private
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+
+curl -I http://
+
+
+yum install certbot -y
+sudo certbot --nginx
+sudo certbot certonly --nginx
+sudo certbot renew --dry-run
+certbot certonly --standalone -d balanceador.hopto.org --debug
+
+Desabilitar a porta 8080 ou redirecionar 
+
+sudo amazon-linux-extras install epel -y
+
