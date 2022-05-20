@@ -11,8 +11,8 @@
 	<target name="compile">
 		<mkdir dir="target/classes/"/>
 		<mkdir dir="target/classes-test/"/>
-		<javac destdir="target/classes/" srcdir="/java/spring-sprint-2/src/main/java/" debug="true" encoding="UTF-8" />
-		<javac destdir="target/classes-test/" srcdir="/java/spring-sprint-2/src/test/java/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
+		<javac destdir="target/classes/" srcdir="src/main/java/" debug="true" encoding="UTF-8" />
+		<javac destdir="target/classes-test/" srcdir="src/test/java/" classpathref="tests.classpath" debug="true" encoding="UTF-8" />
 	</target>
 	
 	<target name="test" depends="compile">
