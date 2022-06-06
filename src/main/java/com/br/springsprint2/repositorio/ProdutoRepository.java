@@ -11,7 +11,4 @@ import org.springframework.data.jpa.repository.Query;
 public interface ProdutoRepository extends JpaRepository<Produto, Integer> {
 
     Produto findOneByIdProduto(Integer id);
-
-    @Query("select ip.produto from ItemPedido ip where ip.pedido.id = ?1")
-    List<Produto> listaDeProdutosPorPedido(int idPedido);
 }
