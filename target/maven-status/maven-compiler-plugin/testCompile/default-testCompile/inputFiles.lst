@@ -1,1 +1,6 @@
-/home/felipeolegario/java/spring-sprint-2/src/test/java/com/br/springsprint2/SpringSprint2ApplicationTests.java
+/home/felipeolegario/projeto-pi/clone-grupo-pi/src/test/java/com/br/springsprint2/controle/ItensPedidoControllerTest.java
+/home/felipeolegario/projeto-pi/clone-grupo-pi/src/test/java/com/br/springsprint2/controle/ProdutoControllerTest.java
+/home/felipeolegario/projeto-pi/clone-grupo-pi/src/test/java/com/br/springsprint2/SpringSprint2ApplicationTests.java
+/home/felipeolegario/projeto-pi/clone-grupo-pi/src/test/java/com/br/springsprint2/controle/PedidoControllerTest.java
+/home/felipeolegario/projeto-pi/clone-grupo-pi/src/test/java/com/br/springsprint2/controle/UsuarioControllerTest.java
+/home/felipeolegario/projeto-pi/clone-grupo-pi/src/test/java/com/br/springsprint2/controle/PetshopControllerTest.java
